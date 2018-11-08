@@ -1,0 +1,101 @@
+@import './default.less';
+
+body,ul,li,div,input,p{
+  margin:0;
+  padding:0;
+}
+.box{
+  background:url('../images/loginbackground.png') no-repeat;
+  height:100vh;
+  width:100vw;
+  overflow: hidden;
+  background-size:cover;
+}
+.transparent{
+  width:368px;
+  height:385px;
+  background-color:rgba(255, 255, 255,0.2);
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-100%,-50%);
+  img{
+    margin-top: 145px;
+    margin-left: 105px;
+
+  }
+  p{
+    margin-top:10px;
+    margin-left: 98px;
+    font-size: 19px;
+    font-family: serif;
+    font-weight: 600;
+    color: rgba(38,126,221,1);
+    text-shadow: 1px 0 2px rgba(20,21,22,0.75);
+  }
+}
+.login{
+  width:368px;
+  height:385px;
+  background:#fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(0,-50%);
+  p{
+    color:#F05348;
+  }
+  p:nth-child(1){
+    margin-top: 55px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  p:nth-child(3),p:nth-child(5){
+    margin-left:40px;
+    margin-top:10px;
+  }
+  .userName{
+    border-bottom:1px solid #666;
+    margin:0 40px;
+    .anticon{
+    margin-right:10px;
+  }
+  }
+  .password{
+    border-bottom:1px solid #666;
+    margin:25px 40px 0 40px;
+    .anticon{
+      margin-right:10px;
+    }
+  }
+  //记住密码颜色和样式设置
+  .ant-checkbox-wrapper{
+    margin-left:40px;
+    margin-top:24px;
+    .ant-checkbox-checked .ant-checkbox-inner{
+    background-color: @blue;
+    border-color: @blue;
+  }
+    .ant-checkbox-checked:after,.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus + .ant-checkbox-inner{
+      border-color: @blue;
+    }
+    
+  }
+  //忘记密码
+  a{
+    margin-left:115px;
+    color:@blue;
+  }
+  
+  //登录按钮
+  .ant-btn-primary{
+    background-color:@blue;
+    border-color:@blue;
+    width:295px;
+    display:block;
+    margin:35px auto 0 auto
+  }
+
+}

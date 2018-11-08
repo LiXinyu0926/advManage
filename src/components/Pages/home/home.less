@@ -1,0 +1,86 @@
+@import '../../../style/default.less';
+
+.home{
+    background-color:#f0f2f5;
+    .home-top,.home-middle,.home-bottom{
+        // margin:10px 20px 0 20px;
+        background-color:#fff;
+    }
+    .home-top{
+        box-sizing: border-box;
+        position:relative;
+        height:6vh;
+        margin-bottom: 10px;
+        .circle1{
+            border-radius:50%;
+            background-color:#E34E42;
+            width:9px;
+            height:9px;
+            position:absolute;
+            top:50%;
+            left:10px;
+            -webkit-transform:translate(0,-50%);
+        }
+        span{
+           line-height:6vh;
+           font-size:@font18;
+           margin-left:32px;
+           
+        }
+        button{
+            background-color:#E34E42;
+            color:#fff;
+            border:none;
+            border-radius:10px;
+            width:104px;
+            height:23px;
+            vertical-align: middle;
+            margin-left:15px;
+        }
+        button:hover{
+            background:rgba(227,78,66,0.7);
+        }
+    }
+    .home-middle{
+        background-color:@bodyBackground;
+        box-sizing: border-box;
+        
+    span{
+        margin-top:10px;
+        background:#fff;
+        width:19.34%;
+        height:13vh;
+        display: inline-block;
+        margin:0 10px 10px 0;
+        text-align: center;
+        padding-top:3vh;
+        }
+    span:nth-child(5){
+        margin-right:0;
+        margin-top:0;
+    }
+    }
+    .home-bottom{
+        height:67vh;
+        box-sizing: border-box;
+        .bottom_top{
+            height:5vh; 
+            position:relative;
+            .circle2{
+                border-radius:50%;
+                background-color:#E34E42;
+                width:9px;
+                height:9px;
+                position:absolute;
+                top:50%;
+                left:10px;
+                -webkit-transform:translate(0,-50%);
+                }
+            .ant-calendar-picker{
+                float:right;
+                padding:1vh;
+            }
+        }
+        
+    }
+}

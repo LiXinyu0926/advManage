@@ -1,0 +1,106 @@
+@import "./default.less";
+body,div,p,h3,ul,li,span{
+    padding:0;
+    margin: 0;
+    font: @font16 "Microsoft YaHei";
+}
+body{
+    background:@bodyBackground;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    .header{
+        height:5.3vh;
+        width:100vw;
+        color: #FFFFFF;
+        h3{
+            color: #FFFFFF;
+        }
+        background:@buleColor;
+        span{
+            float: left;
+        }
+        .logo{
+            height:5.3vh;
+            span:nth-child(1){
+                height:5.3vh;
+                padding-left:1.2vw;
+                padding-top:1.2vh;
+            }
+            span:nth-child(2){
+                height:5.3vh;
+                padding-left:1vw;
+                padding-top:1.7vh;
+                font-size:@font14;
+            }
+
+        }
+        .right{
+            float: right;
+            height:5.3vh;
+            padding:1.5vh 1.5vw;
+            a{
+                margin-left:10px;
+            }
+        }
+    }
+    .content{
+        margin:0;
+        padding:0;
+        height: 89vh;
+        width:100vw;
+        display:flex;
+        .page{
+            color:#333;
+            flex:1;
+            box-sizing:border-box;
+            border-width:10px 20px 0 20px;
+            border-style:solid;
+            background:@bodyBackground;
+            border-color:@bodyBackground;
+            .ant-table-thead > tr.ant-table-row-hover > td,
+            .ant-table-tbody > tr.ant-table-row-hover > td,
+            .ant-table-thead > tr:hover > td,
+            .ant-table-tbody > tr:hover > td {
+            background:rgba(225, 225, 225,.2);
+            }
+            .ant-table-thead{
+                background-color:#E1E1E1;
+            }
+        }
+        .navLeft{
+            flex:0 0 225px;
+            height:89vh;
+            border-top:1px solid #425b72;
+            li span{
+                font-size:@font18;
+            }
+            .anticon{
+                font-size:17px;
+            }
+            .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+                background-color: #E34E42;
+            }
+            .ant-menu-submenu-title {
+                span{font-size:@font18;} 
+                a{
+                    color:#f0f2f5;
+                }
+            }
+            .ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+                background-color: @buleColor;
+            }
+        }
+    }
+    .footer{
+        padding:15px;
+        height:5.7vh;
+        text-align: center;
+        color:#333333;
+        background:@bodyBackground;
+        bottom:0;
+        width:100vw;
+    }
+
+}

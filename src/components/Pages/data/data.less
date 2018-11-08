@@ -1,0 +1,90 @@
+@import '../../../style/default.less';
+
+.data_top,.data_bottom{
+    background-color:#fff;
+}
+.data{
+    
+.data_top{
+    margin-bottom:10px;
+    height:15vh;
+    padding-top:24px;
+    padding-left:10px;
+    //查询和重置按钮
+    .function-button{
+        position:relative;
+        margin:25px 0 0 54px;
+        .reset{
+            margin-left:20px;
+        }
+    }
+    //antd选择模板修改
+    // .ant-select-selection-selected-value{
+    //     font-size:14px;
+    //     line-height: 30px;
+    // }
+    // .ant-select-selection:focus,.ant-select-selection:active{
+    //     border-color:#F1A6A0;
+    //     box-shadow:0 0 0 2px rgba(241, 166, 160, 0.2);
+    // }
+    // .ant-select-selection:hover{
+    //     border-color:#F1A6A0;
+    // }
+    // //antd输入模板修改
+        // .ant-input:focus,.ant-input:active{
+        //     border-color:#F1A6A0;
+        //     box-shadow:0 0 0 2px rgba(241, 166, 160, 0.2);
+        // }
+        // .ant-input:hover{
+        //     border-color:#F1A6A0;
+        // }
+    p{
+        display:inline-block;
+        margin-right:5px;
+    }
+}
+.data_bottom{
+    height:72vh;
+}
+.data_bottom_head{
+    height:6vh;
+    position:relative;
+    
+   //小红点定位
+    .anticon-red{
+        margin:0 10px; 
+    }
+    //下载按钮定位
+    .button-dowload{
+        position:absolute;
+        top:10px;
+        right:10px;
+    }
+    //button今天
+    .today{
+        position:absolute;
+        top:10px;
+        right:380px;
+    }
+    p{
+        display:inline-block;
+        line-height: 6vh;
+        font-size:@font18;
+        color:@fontcolor3;
+    }
+    //日历鼠标滑过变色,点击后变色
+    // .ant-input:hover{
+    //     border-color:#F1A6A0;
+    // }
+    // .ant-calendar-picker:focus .ant-calendar-picker-input:not(.ant-input-disabled){
+    //     border-color:#F1A6A0;
+    //     box-shadow:0 0 0 2px rgba(241, 166, 160, 0.2);
+    // }
+    //日历定位
+   .ant-calendar-picker{
+       position:absolute;
+       top:10px;
+       right:50px;
+    }
+}
+}

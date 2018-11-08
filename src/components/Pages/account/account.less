@@ -1,0 +1,91 @@
+@import '../../../style/default.less';
+@font-face {
+    font-family: 'iconfont';  /* project id 869227 */
+    src: url('//at.alicdn.com/t/font_869227_dzwz7phtmj.eot');
+    src: url('//at.alicdn.com/t/font_869227_dzwz7phtmj.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_869227_dzwz7phtmj.woff') format('woff'),
+    url('//at.alicdn.com/t/font_869227_dzwz7phtmj.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_869227_dzwz7phtmj.svg#iconfont') format('svg');
+  }
+
+  
+.account{
+    position:relative;
+    //上下共同title模块
+    .account-top,.account-bottom{
+        .title{
+            padding:30px 0 0 10px;
+        .circle{
+        font-family:"iconfont" !important;
+        font-size:9px;font-style:normal;
+        color:@themecolor;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+        }
+        span{
+            margin-left:10px;
+            font-size:@font18;
+        }
+        }
+        .account-top-content,.account-bottom-content{
+            padding:30px;
+            p{
+                margin-bottom:20px;
+                font-size:14px;
+            }
+        }
+    }
+
+    .account-top{ 
+        
+        background-color:#fff;
+        height:52vh;
+        .bigBuinessLicence{
+            display: inline-block;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);          
+            z-index:1;
+            .x{
+                font-family:"iconfont" !important;
+                font-size:15px;font-style:normal;
+                color:#333333;
+                position:absolute;
+                top:10px;
+                right:10px;
+                cursor: pointer;
+                -webkit-font-smoothing: antialiased;
+                -webkit-text-stroke-width: 0.2px;
+                -moz-osx-font-smoothing: grayscale;
+                }
+        }
+        .businessLicence{
+            display:inline-block;
+            background:#888;
+            width:244px;
+            height:172px;
+            position:relative;
+            cursor: pointer;
+            .big{
+                font-family:"iconfont" !important;
+                font-size:17px;font-style:normal;
+                color:#333333;
+                position:absolute;
+                bottom:10px;
+                right:10px;
+                cursor: pointer;
+                -webkit-font-smoothing: antialiased;
+                -webkit-text-stroke-width: 0.2px;
+                -moz-osx-font-smoothing: grayscale;
+                }
+        }
+       
+    }
+    .account-bottom{
+        background-color:#fff;
+        margin-top:10px;
+        height:35vh;
+    }
+}
