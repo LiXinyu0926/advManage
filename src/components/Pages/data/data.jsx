@@ -3,6 +3,7 @@ import './data.less';
 import { DatePicker,Icon,Select,Input,Table,Button } from 'antd';
 import moment from 'moment';
 
+const Option = Select.Option;
 const MyIcon = Icon.createFromIconfontCN({
     scriptUrl: '//at.alicdn.com/t/font_869227_oer8sdkv7i.js', // 在 iconfont.cn 上生成
 });
@@ -207,7 +208,7 @@ class Data extends Component {
        this.setState({
          todayTime
        })
-    }
+    };
 
     render() {
         let {handleChange,handletoday}=this;
@@ -238,15 +239,9 @@ class Data extends Component {
                      <RangePicker
                     defaultValue={[moment('2018/01/01', dateFormat), moment('2018/01/01', dateFormat)]}
                     format={dateFormat}
-                    // value={todayTime}
-                    // onchange={(e,a)=>{
-                    //    this.setState({
-                    //      todayTime:e
-                    //    })
-                    // }}
                     showToday
                      />
-                    <Button className="today" type="primary" onclick={handletoday} style={{ backgroundColor:'#E34E42',borderColor:'#E34E42',width:94}}>今天</Button>
+                    <Button className="today" type="primary" onclick={handletoday} style={{width:94}}>今天</Button>
                     <Button className="button-dowload" type="primary"  icon='download' style={{ backgroundColor:'#E34E42',borderColor:'#E34E42'}} />
                 </div>
                     <div className="data_bottom_table">

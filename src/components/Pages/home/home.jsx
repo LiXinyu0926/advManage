@@ -138,8 +138,8 @@ class Home extends Component {
         }
     }
     dataFetch=()=>{
-        const {page,limit,time}=this.state
-        let data = "start_time="+time[0]+"&end_time="+time[1]+"&page="+page+"&limit="+limit
+        const {page,limit,time}=this.state;
+        let data = "start_time="+time[0]+"&end_time="+time[1]+"&page="+page+"&limit="+limit;
         fetch('http://dev.api.onemedia.mobi/adv/index',{
             method:'POST',
             body:data,
@@ -152,7 +152,7 @@ class Home extends Component {
                 return res.json()
             })
             .then((data)=>{
-                console.log(data)
+                console.log(data);
                 if(data.code==2000){
                     this.setState({
                         examine:data.data.examine,
@@ -167,7 +167,7 @@ class Home extends Component {
             .catch((ex)=>{
                 console.log(ex)
             })
-    }
+    };
     //页面初始化
     componentDidMount(){
         this.dataFetch()
@@ -211,7 +211,7 @@ class Home extends Component {
                            }
                            format={dateFormat}
                            onChange={(e,v)=>{
-                               console.log(v)
+                               console.log(v);
                               this.setState({
                                   time:v
                               },()=>{

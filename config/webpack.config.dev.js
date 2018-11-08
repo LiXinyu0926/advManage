@@ -193,7 +193,7 @@ module.exports = {
                 options: {
                   modules: false,
                   modifyVars: {
-                    
+                     "@primary-color": "#E34E42",
                   }
                 }
               }

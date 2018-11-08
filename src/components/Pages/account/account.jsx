@@ -14,13 +14,13 @@ class Account extends Component {
         this.setState({
             showPicture:''
         });
-      }
+      };
     
       handleCancel = (e) => {
         this.setState({
             showPicture:'none'
         });
-      }
+      };
 
     render() {
         let {showModal,handleCancel}=this;

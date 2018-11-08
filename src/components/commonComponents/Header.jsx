@@ -3,9 +3,9 @@ import  Icon from '../../images/icon01.png';
 import { Link } from 'react-router-dom';
 export default class Header extends Component {
     constructor(props){
-        super(props)
+        super(props);
         this.state={
-            userName:this.props.info.username
+            // userName:this.props.info.username
         }
     }
     // componentDidMount(){
@@ -30,7 +30,7 @@ export default class Header extends Component {
                           <span>广告主后台系统</span>
                     </span>
                     <span className="right">
-                        {this.state.userName}
+                        {/*{this.state.userName}*/}
                     <Link to='/'><a href="/#" onClick={clearLocalstorage}>退出</a></Link>
                     </span>
             </div>
